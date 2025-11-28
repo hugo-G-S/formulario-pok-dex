@@ -12,13 +12,11 @@ import PokemonForm from './PokemonForm';
 import PokedexDisplay from './PokedexDisplay';
 import PokemonEditForm from './PokemonEditForm';
 
-// App.jsx
-// Punto de entrada del frontend React. Define el enrutado de la aplicación
-// y envuelve la app con `ThemeProvider` para mantener el estado de tema.
 function App() {
     return (
         <ThemeProvider>
-            <Router>
+            {/* AGREGA basename AQUÍ */}
+            <Router basename="/formulario-pok-dex">
                 <Routes>
                 <Route path="/" element={<UserList />} />
 
